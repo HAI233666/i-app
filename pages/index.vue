@@ -1,23 +1,26 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        i-app
-      </h1>
-      <h2 class="subtitle">
-        My beautiful Nuxt.js project
-      </h2>
+    <div id="main" class="main">
+      <el-carousel :interval="4000" type="card" height="200px">
+        <el-carousel-item v-for="item in 6" :key="item">
+          <h3 class="medium">{{ item }}</h3>
+        </el-carousel-item>
+      </el-carousel>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
+  data () {
+    return {}
+  },
+  mounted () {},
+  created () {
+  },
+  methods: {
+  },
   components: {
-    Logo
   }
 }
 </script>
