@@ -1,0 +1,22 @@
+{
+  "name": "i-app",
+  "version": "1.0.0",
+  "description": "My beautiful Nuxt.js project",
+  "author": "tianqinghai",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.11",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
