@@ -1,19 +1,23 @@
 <template>
   <div class="container">
     <div id="main" class="main">
-      <el-carousel :interval="4000" type="card" height="200px">
+      <!--<el-carousel :interval="4000" type="card" height="200px">
         <el-carousel-item v-for="item in 6" :key="item">
           <h3 class="medium">{{ item }}</h3>
         </el-carousel-item>
-      </el-carousel>
+      </el-carousel>-->
+      <newInput v-model="money"></newInput>
     </div>
   </div>
 </template>
 
 <script>
+import newInput from '~/components/new-input.vue'
 export default {
   data () {
-    return {}
+    return {
+      money: 0
+    }
   },
   mounted () {},
   created () {
@@ -21,6 +25,7 @@ export default {
   methods: {
   },
   components: {
+    newInput
   }
 }
 </script>
