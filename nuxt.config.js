@@ -29,7 +29,11 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    {src: '~/assets/live2d/assets/jquery.min.js', ssr: false},
+    {src: '~/assets/live2d/assets/jquery-ui.min.js', ssr: false},
+    {src: '~/assets/live2d/assets/live2d.js', ssr: false},
+    {src: '~/assets/live2d/assets/waifu-tips.js', ssr: false}
   ],
   /*
   ** Nuxt.js modules
