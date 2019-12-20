@@ -30,10 +30,12 @@ export default {
   */
   plugins: [
     '@/plugins/element-ui',
+    '@/plugins/vue-map',
     {src: '~/assets/live2d/assets/jquery.min.js', ssr: false},
     {src: '~/assets/live2d/assets/jquery-ui.min.js', ssr: false},
     {src: '~/assets/live2d/assets/live2d.js', ssr: false},
-    {src: '~/assets/live2d/assets/waifu-tips.js', ssr: false}
+    {src: '~/assets/live2d/assets/waifu-tips.js', ssr: false},
+    {src: '~/assets/canvas-nest.js', ssr: false}
   ],
   /*
   ** Nuxt.js modules
