@@ -1,6 +1,6 @@
 <template>
   <div class="">
-  	<el-input v-model="inputValue" placeholder="请输入内容" @focus="toNumber" @blur="toMoney"></el-input>
+  	<el-input v-model="inputValue" placeholder="" @focus="toNumber" @blur="toMoney" :disabled="disabled" :readonly="readonly" :name="name"></el-input>
   </div>
 </template>
 
@@ -13,8 +13,11 @@ export default {
         return 0
       }
     },
+    name: '',
+    disabled: false,
+    readonly: false
   },
-  data() {
+  data () {
     return {
       inputValue: ''
     }
@@ -29,7 +32,7 @@ export default {
   },
   methods: {
     toMoney () {
-      this.$emit('input', this.inputValue ? +this.inputValue : 0)
+      this.$emit('input', Math.round((this.inputValue ? +this.inputValue : 0) * 100) / 100)
       this.inputValue = this.finMoneyformat(this.inputValue, 2, '.', ',', 'round')
     },
     toNumber () {

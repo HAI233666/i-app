@@ -90,6 +90,6 @@ html {
 }
 
 .default-main {
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
 }
 </style>

@@ -11,9 +11,7 @@ import newInput from '~/components/new-input.vue'
 import live from '~/components/live.vue'
 export default {
   data () {
-    return {
-      money: 0
-    }
+    return {}
   },
   mounted () {},
   created () {

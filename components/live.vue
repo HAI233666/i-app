@@ -8,7 +8,7 @@
 
 </script>
 <style>
-@import '~/assets/live2d/assets/waifu.min.css';
+@import '~/assets/live2d/assets/waifu.css';
 .live-div {
   position: fixed;
   right: 0;
