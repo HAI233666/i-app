@@ -69,7 +69,7 @@ typings/
 .nuxt
 
 # Nuxt generate
-
+#dist
 
 # vuepress build output
 .vuepress/dist
@@ -87,4 +87,5 @@ sw.*
 # Mac OSX
 .DS_Store
 
-*.yml
+
+.history
