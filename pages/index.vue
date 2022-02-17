@@ -9,6 +9,7 @@
 <script>
 import newInput from '~/components/new-input.vue'
 import live from '~/components/live.vue'
+import end from '~/components/end.vue'
 export default {
   data () {
     return {}
@@ -20,7 +21,8 @@ export default {
   },
   components: {
     newInput,
-    live
+    live,
+    end
   }
 }
 </script>

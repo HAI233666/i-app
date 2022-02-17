@@ -8,7 +8,13 @@
 -->
 <template>
   <div>
-    {{newDate}}
+    <div>
+      <el-date-picker v-model="newDate" type="datetime" size="normal" placeholder="选择日期时间"></el-date-picker>
+    </div>
+    <div>
+      {{newDate}}
+    </div>
+    
   </div>
 </template>
 
@@ -18,6 +24,12 @@ export default {
     return {
       newDate: new Date()
     }
+  },
+  mounted () {
+
+  },
+  methods: {
+
   }
 }
 </script>
