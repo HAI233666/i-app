@@ -1,5 +1,9 @@
 
 export default {
+  target: 'static',
+  router: {
+    base: '/i-app/'
+  },
   mode: 'spa',
   /*
   ** Headers of the page
