@@ -2,7 +2,7 @@
 export default {
   target: 'static',
   router: {
-    base: '/i-app/'
+    base: '/i-home/'
   },
   mode: 'spa',
   /*
@@ -19,7 +19,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-    	{ src: '/js/jquery.min.js' }
+    	{ src: 'http://libs.baidu.com/jquery/2.0.0/jquery.min.js' },
+      { src: 'http://libs.baidu.com/jqueryui/1.8.22/jquery-ui.min.js' }
     ]
   },
   /*
@@ -38,11 +39,11 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/vue-map',
-    {src: '@/assets/live2d/assets/jquery.min.js', ssr: false},
-    {src: '@/assets/live2d/assets/jquery-ui.min.js', ssr: false},
-    {src: '@/assets/live2d/assets/live2d.js', ssr: false},
-    {src: '@/assets/live2d/assets/waifu-tips.js', ssr: false},
-    {src: '@/assets/canvas-nest.js', ssr: false}
+    // {src: '~/assets/live2d/assets/jquery.min.js', ssr: false},
+    // {src: '~/assets/live2d/assets/jquery-ui.min.js', ssr: false},
+    {src: '~/assets/live2d/assets/live2d.js', ssr: false},
+    {src: '~/assets/live2d/assets/waifu-tips.js', ssr: false},
+    {src: '~/assets/canvas-nest.js', ssr: false}
   ],
   /*
   ** Nuxt.js modules
